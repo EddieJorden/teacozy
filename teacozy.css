@@ -13,8 +13,17 @@ h1 {
 }
 
 .header {
+<<<<<<< HEAD
 	display: flex;
 	height: 69px;
+=======
+
+
+}
+
+.logo {
+	display: inline-flex
+>>>>>>> 300999f885f5d49c4b8a99b1d5417f47692a27ea
 }
 
 .menu {
