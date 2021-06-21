@@ -1,25 +1,22 @@
-* {
+body {
 	background-color: rgb(24, 24, 24);
 	color: rgb(190, 222, 223);
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 22px;
+
 	opacity: 0.9;
-
-	border: 0;
-	margin: 0;
 }
 
-h1 {
-	font-size: 50px;
+.container {
+	display: flex;
+	flex-direction: column;
 }
 
-.header {
+header {
 	display: flex;
 	height: 69px;
 	width: 100%;
 	z-index: 1;
 	border-bottom: 1px solid seashell;
-	position: fixed;
 }
 
 .logo {
@@ -30,39 +27,64 @@ h1 {
 
 .menu {
 	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
 	width: 100%;
 	justify-content: flex-end;
 	margin-right: 15px;
 }
 
+.menu h2 {
+	display: inline-block;
+	margin: 15px;
+	margin-bottom: 0;
+}
+
 .mission {
 	display: flex;
+
 	background-image: url('img-mission-background.webp');
 	height: 700px;
+
 	/* margin-top: 100px; */
 	background-repeat: no-repeat;
 	background-position: center;
-	z-index: 1;
 }
 
 .our-mission {
 	display: flex;
-	width: 100%;
-	/* margin-top: 200px;
-	margin-bottom: 300px; */
+	flex-direction: column;
+	height: 150px;
+	width: 1200px;
+	text-align: center;
+	background-color: rgb(24, 24, 24);
+	margin: auto;
+	justify-content: center;
 }
 
+/* .our-mission h2 h4 {
+	margin: auto;
+} */
+
 .tea-of-the-month {
-	width: 100%;
+	width: 1000px;
 	text-align: center;
+	margin: auto;
+}
+
+.tea-of-the-month-title {
+	margin: 30px;
 }
 
 .monthly-tea {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: center;
 	text-align: center;
-	margin-bottom: 10px;
+}
+
+.tea-of-the-month div {
+	margin: 10px;
 }
 
 .tea-image {
@@ -72,21 +94,44 @@ h1 {
 
 .locations {
 	display: flex;
+	flex-direction: column;
 	background-image: url('img-locations-background.jpg');
 	height: 500px;
+	justify-content: center;
+	width: 1200px;
+	margin: auto;
+	/* margin-top: 100px; */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.locations div {
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
 }
 
 .location {
+	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
-	background-color: black;
+	background-color: rgb(24, 24, 24);
+	margin: auto;
+	width: 300px;
+	margin: 15px 20px 0;
 }
 
-.footer {
+footer {
 	height: 200px;
+	width: 1200px;
 	text-align: center;
+	margin: auto;
 }
 
 .copyright {
-	margin-left: 20px;
+	margin: auto;
 	text-align: left;
+	width: 1200px;
 }
